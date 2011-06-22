@@ -167,6 +167,7 @@ function release_profile_modules() {
     // (STUB) wysiwyg.make
 
     // Bundled modules
+    'release_feature'
   );
 }
  
