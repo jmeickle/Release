@@ -120,8 +120,9 @@ function release_profile_modules() {
     'pathauto',
     'pathauto_persist',
 //    'page_title',
-    'subpath_alias',
-    'url_alter',
+//    These two are enabled later due to hanging during install.
+//    'subpath_alias',
+//    'url_alter',
 //    'xmlsitemap',
 
     // ui.make
