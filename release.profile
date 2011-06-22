@@ -279,24 +279,8 @@ function release_profile_tasks(&$task, $url) {
     // Set up content types.
     require("content_type.inc");
 
-    // Set up taxonomy.
-    require("taxonomy.inc");
-
-    // Set up roles and permissions.
-    require("permission.inc");
-
     // Users that should be created at install.
     require("user.inc");
-
-    // Nodes that should be created at install.
-    require("node.inc");
-
-    // Menus, now that we have everything that might
-    // create a path already set up.
-    require("menu.inc");
-
-    // Set up any Blocks and Contexts.
-    require("block.inc");
 
     // We're done! Clear caches again, just to be safe.
     drupal_flush_all_caches();
