@@ -45,7 +45,7 @@ function release_profile_modules() {
     'devel',
     'devel_generate',
     'performance',
-    'googleanalytics',
+//    'googleanalytics', Temporarily disabled.
     'node_import',
 // Installed later because it depends on Ctools.
 //    'strongarm',
