@@ -17,10 +17,13 @@ variable_set('update_notify_emails', array(0 => "eronarn@gmail.com"));
 
 // Core node settings.
 // Don't have anything here yet.
-// variable_set('site_frontpage', 'home');
+variable_set('site_frontpage', 'frontpage');
 variable_set('default_nodes_main', "5");
 variable_set('node_preview', "0");
 variable_set('teaser_length', "200");
+
+// Disable core blocks
+variable_set('context_reaction_block_disable_core', "1");
 
 // Filter settings.
 variable_set('allowed_html_1', "<a> <i> <em> <b> <strong> <cite> <code> <ul> <ol> <li> <dl> <dt> <dd>");
@@ -30,14 +33,13 @@ variable_set('filter_html_nofollow_1', 0);
 variable_set('filter_url_length_1', "72");
 variable_set('format', "1");
 
-// Having the Search region active breaks OL Geocoder,
-// so we disable it here. (Also do other theme settings.)
+// Theme settings.
 
 variable_set('theme_settings', array(
     'toggle_logo' => 1,
     'toggle_name' => 1,
     'toggle_slogan' => 1,
-    'toggle_mission' => 1,
+    'toggle_mission' => 0,
     'toggle_node_user_picture' => 0,
     'toggle_comment_user_picture' => 0,
     'toggle_search' => 0,
