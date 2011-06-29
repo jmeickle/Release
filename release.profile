@@ -156,8 +156,6 @@ function release_profile_modules() {
     'diff',
     'override_node_options',
     'revisioning',
-    'workflow',
-    'workflow_access',
 
     // (STUB) wysiwyg.make
 
