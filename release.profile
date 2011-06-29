@@ -104,6 +104,19 @@ function release_profile_modules() {
 //    'reverse_node_reference', // Installed later because it depends on db_version.
     'text',
     'userreference',
+ 
+    // interaction.make
+    'autoload',
+    'messaging',
+    'messaging_mail',
+    'messaging_template',
+    'notifications_anonymous',
+    'notifications_content',
+    'notifications_nodetype',
+    'notifications_digest',
+    'notifications',
+    'notifications_ui',
+
 
     // panels.make
     'panels',

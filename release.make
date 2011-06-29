@@ -16,6 +16,9 @@ includes[basic] = "makefiles/basic.make"
 ; CCK and modules that create new types of CCK fields.
 includes[cck] = "makefiles/cck.make"
 
+; Email subscriptions.
+includes[interaction] = "makefiles/interaction.make"
+
 ; Panels and related modules.
 includes[panels] = "makefiles/panels.make"
 
