@@ -117,10 +117,20 @@ variable_set('vertical_tabs_node_type_settings', 0);
 variable_set('quicktabs_tabstyle', "Sky");
 
 // Pathauto settings
-variable_set('pathauto_node_pattern', '[type]/[title-raw]');
+variable_set('pathauto_node_release_article_pattern', 'article/[mm]-[dd]-[yyyy]/[title-raw]');
 variable_set('pathauto_reduce_ascii', 1);
 variable_set('pathauto_update_action', "1");
 variable_set('pathauto_max_bulk_update', "100");
+
+// Pagination settings
+
+variable_set('pagination_collapsed', 1);
+variable_set('pagination_filter', 1);
+variable_set('pagination_header', 3);
+variable_set('pagination_ignore', "");
+variable_set('pagination_list_type', "ul");
+variable_set('pagination_onebased', 1);
+variable_set('pagination_showall', 0);
 
 // Contact form settings.
 variable_set('contact_default_status', 0);
