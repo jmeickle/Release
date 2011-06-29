@@ -51,8 +51,9 @@ function release_profile_modules() {
 //    'strongarm',
 
     // basic.make
-//    'content_profile',
-//    'content_profile_tokens',
+    'content_profile',
+    'content_profile_registration',
+    'content_profile_tokens',
 // Installed later because they depend on Ctools.
 //    'context',
 //    'context_layouts',
