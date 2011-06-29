@@ -34,7 +34,7 @@ function release_profile_modules() {
     'help',
     'menu',
     'path',
-    'search',
+//    'search',
     'taxonomy',
   
     // The rest are contrib modules, sorted by makefile:
@@ -106,12 +106,6 @@ function release_profile_modules() {
 
     // panels.make
     'panels',
-
-    // search.make
-    'field_indexer',
-    'cck_field_indexer',
-    'node_field_indexer',
-    'porterstemmer',
 
     // seo.make
 //    'nodewords_admin',
