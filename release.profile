@@ -77,6 +77,7 @@ function release_profile_modules() {
     'imageapi_gd',
     'imagecache',
     'imagecache_ui',
+    'nodequeue',
 
     // cck.make
     'conditional_fields',
@@ -146,7 +147,9 @@ function release_profile_modules() {
     'hs_taxonomy_views',
     'hs_menu',
     'ie_css_optimizer',
+    'lightbox2',
     'logintoboggan',
+    'pagination',
     'quicktabs',
     'taxonomy_manager',
     'vertical_tabs',
