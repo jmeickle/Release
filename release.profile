@@ -132,6 +132,7 @@ function release_profile_modules() {
     'hs_taxonomy',
     'hs_taxonomy_views',
     'hs_menu',
+    'ie_css_optimizer',
     'logintoboggan',
     'quicktabs',
     'taxonomy_manager',
