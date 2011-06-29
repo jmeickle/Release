@@ -286,6 +286,12 @@ function release_profile_tasks(&$task, $url) {
     // Set various site variables, options, and settings.
     require("variable.inc");
 
+    // Notifications settings
+    require("notifications.inc");
+
+    // Lightbox settings
+    require("lightbox2.inc");
+
     // Set up content types.
     require("content_type.inc");
 
