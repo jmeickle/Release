@@ -19,9 +19,6 @@ includes[cck] = "makefiles/cck.make"
 ; Panels and related modules.
 includes[panels] = "makefiles/panels.make"
 
-; Search improvement modules.
-includes[search] = "makefiles/search.make"
-
 ; SEO related modules.
 includes[seo] = "makefiles/seo.make"
 
