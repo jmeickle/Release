@@ -55,8 +55,14 @@ variable_set('theme_settings', array(
     'favicon_upload' => '',
 ));
 
+// Use admin theme for editing nodes
+variable_set('node_admin_theme', 1);
+
 // Performance settings
-variable_set('preprocess_css', "1");
+variable_set('preprocess_css', "theme");
+
+// Nodequeue settings
+variable_set('nodequeue_links', 0);
 
 // Date settings
 variable_set('date_db_tz_support', 0);
@@ -71,10 +77,14 @@ variable_set('date_format_short', "Y-m-d H:i");
 variable_set('imageapi_image_toolkit', "imageapi_gd");
 variable_set('image_toolkit', "gd");
 
-// Search settings.
-variable_set('search_cron_limit', 200);
+// Messaging settings.
+variable_set('messaging_default_method', 'mail');
+variable_set('messaging_mail_default_from', "newsletter@releasenews.org");
+variable_set('messaging_mail_returnpath', "eronarn@gmail.com");
+variable_set('messaging_mail_sender_format', "[name] <[mail]>");
+variable_set('messaging_method_enabled', array("mail" => "mail"));
 
-  // Admin settings
+// Admin settings
   variable_set('admin_toolbar', array(
     'layout' => "horizontal",
     'position' => "sw",
