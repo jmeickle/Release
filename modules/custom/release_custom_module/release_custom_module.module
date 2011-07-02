@@ -1,0 +1,107 @@
+<?php
+// $Id$
+//Created using Brandon Dixon's <brandon.s.dixon@gmail.com> Skeleton Module Generator
+/**
+* Replace all comments if you would like. Be sure to identify params, files and returns in your comments
+*/
+
+// From http://drupal.org/node/617694
+
+/**
+ * Implementation of hook_elements().
+ *
+ * This extends optionwidgets_elements() to add in additional processing.
+ * Note that your module must be weighted higher than optionwidgets
+ * for this code to take effect.
+ */
+function release_custom_module_elements() {
+  $type['optionwidgets_buttons']['#process'][] = 'remove_radio_na';
+  return $type;
+}
+
+/**
+ * Unset the N/A option on option widget radio buttons.
+ */
+function remove_radio_na($element) {
+  unset($element['value']['#options']['']);
+  return $element;
+}
+
+/**
+  * Implementation of hook_block. 
+  */
+function release_custom_module_block($op = 'list', $delta = '', $edit = array()) {
+
+  switch ($op) {
+
+    case 'list':
+      $blocks['subscribe'] = array('info' => t('Release: Subscribe Block'));
+      $blocks['corner'] = array('info' => t('Release: National Corner Sidebar Block'));
+      $blocks['graphs'] = array('info' => t('Release: Graphs Sidebar Block'));
+      $blocks['welcome'] = array('info' => t('Release: Welcome Sidebar Block'));
+      $blocks['quarterly'] = array('info' => t('Release: Quarterly Sidebar Block'));
+      return $blocks;
+
+    // In case we eventually want to add config options here.
+    case 'configure':
+      $form = array();
+      return $form;
+
+    case 'save':
+      return;
+
+    case 'view':
+
+      $dir = base_path() . drupal_get_path('theme', 'release');
+
+      switch ($delta) {
+        case 'subscribe':
+
+          // Builds our subscription link (always for anon users).
+          $url = notifications_build_link('subscribe',
+                                           array('destination' => TRUE, 
+                                                 'type' => 'nodetype',
+                                                 'fields' => array('type' => 'release_article')
+                                                ),
+                                          'subscription',
+                                           NULL);
+//                                          'path');
+          $html = '<img src="'.$dir.'/images/Subscribe.png" />';
+          $block['content'] = l($html, $url['href'], array("html" => TRUE));
+          $block['content'] .= t('Subscribe to email updates for this site.');
+          break;
+        case 'corner':
+          $html = '<img src="'.$dir.'/images/USA.png" />';
+          $block['content'] = l($html, 'corner', array("html" => TRUE));
+          $block['content'] .= t('We need copy for this button.');
+          break;
+        case 'graphs':
+          $html = '<img src="'.$dir.'/images/Graphs.png" />';
+          $block['content'] = l($html, 'graphs', array("html" => TRUE));
+          $block['content'] .= t('See the latest graphs, statistics, and visual information.');
+          break;
+        case 'welcome':
+          $html = '<img src="'.$dir.'/images/Welcome.png" />';
+          $block['content'] = l($html, 'welcome', array("html" => TRUE));
+          $block['content'] .= t('What our online newsletter is all about and why we are here.');
+          break;
+        case 'quarterly':
+          $block['content'] = t('This is the content for this block.');
+          break;
+      }
+
+    return $block;
+  }
+}
+
+// hook_form_alter implementation to modify the subscription form.
+function release_custom_module_form_alter(&$form, $form_state, $form_id) {
+   
+    if ($form_id == "notifications_anonymous_subscription_confirm_form")
+    {
+       unset($form['info']["#title"]);
+       unset($form['info']["#description"]);
+       $form['info']["#value"] = "Explanatory text of how subscribing works goes here.";
+       $form['notifications']["#type"] = "hidden";
+    }
+}
