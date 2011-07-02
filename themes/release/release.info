@@ -44,12 +44,8 @@
   ; "handheld". See http://www.w3.org/TR/CSS21/media.html#media-types for a full
   ; list of stylesheet media types in CSS 2.1.
 
-  stylesheets[all][]   = reset.css
-  stylesheets[all][]   = html-elements.css
-  stylesheets[all][]   = forms.css
-  stylesheets[all][]   = layout.css
-  stylesheets[all][]   = suckerfish.css
-  stylesheets[all][]   = style.css
+  stylesheets[all][]   = custom.css
+  stylesheets[all][]   = james.css
 
   ; The "features" control which of these check boxes display on the
   ; admin/build/themes configuration page. This is useful for 
@@ -102,7 +98,6 @@
   skinr[nw-background-fill][options][1][class] = nw-background-fill-light
   skinr[nw-background-fill][options][2][label] = Dark fill
   skinr[nw-background-fill][options][2][class] = nw-background-fill-dark
-
 
 version = "6.x-beta1"
 core = "6.x"
