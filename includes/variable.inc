@@ -7,7 +7,7 @@ variable_set('site_footer', 'This website was developed by the <a href="http://w
 variable_set('site_mail', 'eronarn@gmail.com');
 variable_set('site_name', 'Release');
 variable_set('site_offline_message', "The Release website is currently offline for maintenance. Our apologies for the interruption.");
-variable_set('site_slogan', 'News related to Connecticut's incarcerated citizens and the organizations that serve them');
+variable_set('site_slogan', 'News related to Connecticut\'s incarcerated citizens and the organizations that serve them');
 variable_set('site_mission', '');
 
 // Core notification settings.
