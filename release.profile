@@ -111,13 +111,12 @@ function release_profile_modules() {
     'messaging',
     'messaging_mail',
     'messaging_template',
-    'notifications_anonymous',
-    'notifications_content',
-    'notifications_nodetype',
-    'notifications_digest',
+//    'notifications_anonymous',
+//    'notifications_content',
+//    'notifications_nodetype',
+//    'notifications_digest',
     'notifications',
-    'notifications_ui',
-
+//    'notifications_ui',
 
     // panels.make
     'panels',
@@ -274,6 +273,7 @@ function release_profile_tasks(&$task, $url) {
     // First, we need to install some modules that would break the normal install hook.
     module_rebuild_cache();
     drupal_install_modules(array('strongarm', 'modalframe', 'reverse_node_reference', 'context', 'context_layouts', 'context_ui', 'subpath_alias', 'url_alter'));
+    drupal_install_modules(array('notifications_anonymous', 'notifications_content', 'notifications_nodetype', 'notifications_digest', 'notifications_ui'));
 
     // By now, all modules are installed.
 
