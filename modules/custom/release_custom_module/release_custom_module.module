@@ -99,7 +99,7 @@ function release_custom_module_form_alter(&$form, $form_state, $form_id) {
     {
        unset($form['info']["#title"]);
        unset($form['info']["#description"]);
-       $form['info']["#value"] = "Explanatory text of how subscribing works goes here.";
+       $form['info']["#value"] = "Release updates about twice a month. By subscribing to Release, you will receive a notification as well as occasional emails about events or special publications related to the topic of reentry. However, we will not share your email with other organizations or other subscribers.";
        $form['notifications']["#type"] = "hidden";
     }
 }
