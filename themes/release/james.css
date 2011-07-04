@@ -265,8 +265,9 @@ h3.meta .tags ul.links li {
 }
 
 #footer-message p {
-    margin: 5px auto;
-    width: 66%;
+    margin: 10px auto;
+    font-size: 75%;
+    font-style: italic;
 }
 
 #footer-message a {
