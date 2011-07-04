@@ -68,7 +68,6 @@ function release_custom_module_block($op = 'list', $delta = '', $edit = array())
 //                                          'path');
           $html = '<img src="'.$dir.'/images/Subscribe.png" />';
           $block['content'] = l($html, $url['href'], array("html" => TRUE));
-          $block['content'] .= t('Subscribe to email updates for this site.');
           break;
         case 'corner':
           $html = '<img src="'.$dir.'/images/USA.png" />';
@@ -83,7 +82,6 @@ function release_custom_module_block($op = 'list', $delta = '', $edit = array())
         case 'welcome':
           $html = '<img src="'.$dir.'/images/Welcome.png" />';
           $block['content'] = l($html, 'welcome', array("html" => TRUE));
-          $block['content'] .= t('What our online newsletter is all about and why we are here.');
           break;
         case 'quarterly':
           $block['content'] = t('This is the content for this block.');
