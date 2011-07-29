@@ -80,7 +80,7 @@ variable_set('image_toolkit', "gd");
 // Messaging settings.
 variable_set('messaging_default_method', 'mail');
 variable_set('messaging_mail_default_from', "newsletter@releasenews.org");
-variable_set('messaging_mail_returnpath', "eronarn@gmail.com");
+variable_set('messaging_mail_returnpath', "imrp@ccsu.edu");
 variable_set('messaging_mail_sender_format', "[name] <[mail]>");
 variable_set('messaging_method_enabled', array("mail" => "mail"));
 
@@ -138,10 +138,10 @@ variable_set('contact_form_information', "Run into a bug on our site? Spot inacc
 variable_set('contact_hourly_threshold', 3);
 
 $contact_info = array (
-    array("cid" => 1, "category" => "Feedback about site", "recipients" => "eronarn@gmail.com", "reply" => '', "weight" => 0, "selected" => 1),
-    array("cid" => 2, "category" => "Help with using the site", "recipients" => "eronarn@gmail.com", "reply" => '', "weight" => 0, "selected" => 0),
-    array("cid" => 3, "category" => "Wrong information on site", "recipients" => "eronarn@gmail.com", "reply" => '', "weight" => 0, "selected" => 0),
-    array("cid" => 4, "category" => "Request for further information", "recipients" => "eronarn@gmail.com", "reply" => '', "weight" => 0, "selected" => 0),
+    array("cid" => 1, "category" => "Feedback about site", "recipients" => "imrp@ccsu.edu", "reply" => '', "weight" => 0, "selected" => 1),
+    array("cid" => 2, "category" => "Help with using the site", "recipients" => "imrp@ccsu.edu", "reply" => '', "weight" => 0, "selected" => 0),
+    array("cid" => 3, "category" => "Wrong information on site", "recipients" => "imrp@ccsu.edu", "reply" => '', "weight" => 0, "selected" => 0),
+    array("cid" => 4, "category" => "Request for further information", "recipients" => "imrp@ccsu.edu", "reply" => '', "weight" => 0, "selected" => 0),
 );
 
 foreach ($contact_info as $values) {
