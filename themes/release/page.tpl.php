@@ -12,6 +12,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="<?php print $language->language; ?>" xml:lang="<?php print $language->language; ?>">
 <head>
   <title><?php print $head_title; ?></title>
+  <link rel="alternate" type="application/rss+xml" title="Release RSS" href="http://releasenews.org/feed">
   <?php print $head; ?>
   <?php print $styles; ?>
   <!--[if lte IE 7]>
