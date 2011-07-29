@@ -14,7 +14,11 @@
   <?php if (!$page): ?>	
     <h2><a href="<?php print $node_url; ?>" rel="bookmark"><?php print $title; ?></a></h2>
   <?php endif; ?>
-	
+
+  <?php if ($page && !empty($node->field_subtitle[0]['value'])): ?>
+    <h2><?php print $node->field_subtitle[0]['value']; ?></h2>
+  <?php endif; ?>
+
   <?php if ($unpublished): ?>
     <div class="unpublished"><?php print t('Unpublished'); ?></div>
   <?php endif; ?>
