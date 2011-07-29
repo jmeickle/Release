@@ -4,7 +4,7 @@
 
 // Basic site information:
 variable_set('site_footer', 'This website was developed by the <a href="http://www.ccsu.edu/imrp">Institute for Municipal and Regional Policy</a> at <a href="http://www.ccsu.edu">Central Connecticut State University</a> using <a href="http://github.com/Eronarn/Thurgood">Thurgood</a>, a custom installation profile for <a href="http://drupal.org">Drupal</a>.');
-variable_set('site_mail', 'eronarn@gmail.com');
+variable_set('site_mail', 'imrp@ccsu.edu');
 variable_set('site_name', 'Release');
 variable_set('site_offline_message', "The Release website is currently offline for maintenance. Our apologies for the interruption.");
 variable_set('site_slogan', 'News related to Connecticut\'s formerly incarcerated citizens and the organizations that serve them');
@@ -13,7 +13,7 @@ variable_set('site_mission', '');
 // Core notification settings.
 variable_set('update_check_frequency', "1");
 variable_set('update_notification_threshold', "all");
-variable_set('update_notify_emails', array(0 => "eronarn@gmail.com"));
+variable_set('update_notify_emails', array(0 => "imrp@ccsu.edu"));
 
 // Core node settings.
 // Don't have anything here yet.
