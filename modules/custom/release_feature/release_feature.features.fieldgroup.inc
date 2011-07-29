@@ -18,7 +18,11 @@ function release_feature_fieldgroup_default_groups() {
         'description' => '',
       ),
       'display' => array(
-        'weight' => '2',
+        'weight' => '8',
+        '4' => array(
+          'format' => 'fieldset',
+          'exclude' => 1,
+        ),
         'label' => 'above',
         'teaser' => array(
           'format' => 'fieldset',
@@ -29,10 +33,6 @@ function release_feature_fieldgroup_default_groups() {
           'exclude' => 1,
         ),
         'description' => '',
-        '4' => array(
-          'format' => 'fieldset',
-          'exclude' => 0,
-        ),
         '2' => array(
           'format' => 'fieldset',
           'exclude' => 0,
@@ -94,7 +94,7 @@ function release_feature_fieldgroup_default_groups() {
         ),
       ),
     ),
-    'weight' => '1',
+    'weight' => '2',
     'fields' => array(
       '0' => 'field_document',
       '1' => 'field_image',
