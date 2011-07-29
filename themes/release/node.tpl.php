@@ -18,21 +18,38 @@
   <?php if ($page && !empty($node->field_subtitle[0]['value'])): ?>
     <h2><?php print $node->field_subtitle[0]['value']; ?></h2>
   <?php endif; ?>
-
+	
   <?php if ($unpublished): ?>
     <div class="unpublished"><?php print t('Unpublished'); ?></div>
   <?php endif; ?>
 
  <?php if ($submitted): ?>
     <h3 class="meta">
-      <em><?php print t('by'); ?> <?php print $name; ?></em>
+      <em><?php print t('by'); ?>
+          <?php 
+              print '<a href="'.base_path().'staff#'.$node->name.'">';
+              print $node->name;
+              print '</a>';
+          ?>
+      </em>
       <?php print t('posted'); ?>
       <abbr title="<?php print format_date($node->created, 'custom', "l, F j, Y - H:i"); ?>">
         <?php print format_date($node->created, 'custom', "m.d.y"); ?>
       </abbr>
       <?php if ($terms): ?>
         <?php print t('in'); ?>
-        <div class="tags"><?php print $terms; ?></div>
+        <div class="tags">
+        <?php foreach ($node->taxonomy as $tid => $term)
+              {
+                  if ($term->vid == 3)
+                  {
+                      print '<a href="'.base_path().'archive#'.$term->name.'">';
+                      print $term->name;
+                      print '</a>';
+                  }
+              }
+        ?>
+        </div>
       <?php endif; ?>
     </h3>
   <?php endif; ?>

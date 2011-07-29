@@ -44,7 +44,7 @@
           <div class="branding width-30-590">
             <?php if ($logo) { print $logo; } else { print $site_name; } ?>        
             <?php if ($site_slogan): ?>
-              <em><?php print $site_slogan; ?></em>
+              <p><?php print $site_slogan; ?></p>
             <?php endif; ?>
           </div> <!-- /branding -->
         <?php endif; ?>
@@ -59,7 +59,8 @@
             <?php print l('<img src="' . base_path() . drupal_get_path('theme', 'release') . '/images/imrp_logo.png" />',
                           'http://www.ccsu.edu/imrp', 
                            array('html' => TRUE, 'external' => TRUE)); ?>
-            <p>Brought to you by the IMRP at Central Connecticut State University.</p>
+            <p>Brought to you by students at Central Connecticut State University, sponsored by the Institute for 
+Municipal and Regional Policy.</p>
         </div>
 
       </div> <!-- /header -->
@@ -72,6 +73,8 @@
         </div> <!-- /primary -->
       <?php endif; ?>
     </div>
+
+    <div id="second-bar" class="width-48-950 last nofloat clearfix"></div>
 
     <?php if ($secondary_links): ?> 
       <div id="secondary-menu" class="width-48-950 last nofloat">
