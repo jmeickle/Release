@@ -3,24 +3,23 @@
 .pane-views-release-slideshow-block-1 {
 
     padding: 10px;
-    background: #d0d0d0;
+    background: #6A6A6A;
 
 }
 
 #views_slideshow_singleframe_main_release_slideshow-block_1 {
 
     margin-right: 16px;
-    background: #6A6A6A;
-
+    background: #555;
 }
 
-.view-id-release_slideshow .views-field-name {
+.view-id-release_slideshow .views-field-tid {
     position: absolute;
     bottom: 0px;
     z-index: 1;
 }
 
-.view-id-release_slideshow .views-field-name,
+.view-id-release_slideshow .views-field-tid,
 .activeSlide {
 
     /* Fallback for web browsers that doesn't support RGBa */
@@ -33,7 +32,7 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F3F98A9, endColorstr=#7F3F98A9)";
 }
 
-.view-id-release_slideshow .views-field-name span a {
+.view-id-release_slideshow .views-field-tid span a {
     color: white;
     font-size: 200%;
     text-transform: uppercase;
@@ -45,7 +44,6 @@
 
     float: right;
     clear: both;
-
 }
 
 #views_slideshow_singleframe_teaser_section_release_slideshow-block_1, 
@@ -64,7 +62,7 @@
 }
 
 .view-id-release_slideshow .views-field-field-frontpage-image-fid,
-.view-id-release_slideshow .views-field-name {
+.view-id-release_slideshow .views-field-tid {
 
     width: 250px;
 
@@ -78,6 +76,10 @@
 
 }
 
+.view-id-release_slideshow .views-slideshow-controls-top a {
+    color: lightgrey;
+}
+
 .view-id-release_slideshow .views_slideshow_singleframe_pager div {
 
     display: block;
@@ -88,15 +90,19 @@
 
 }
 
-.view-id-release_slideshow .views-field-title a {
+.view-id-release_slideshow .views-field-title {
     font-size: 175%;
+    color: white;
+}
+
+.view-id-release_slideshow .views-field-title a {
     color: #3F98A9;
 }
 
 .view-id-release_slideshow .views-field-teaser {
 
     font-size: 125%;
-    color: white;
+    color: lightgrey;
 
 }
 
@@ -178,13 +184,23 @@
 
 blockquote {
     padding-left: 5px;
+    margin-bottom: 0px;
 }
 
-blockquote,
-.views-field-field-quote-value {
+blockquote {
     color: black;
     font-size: 110%;
     font-style: inherit;
+}
+
+.views-field-field-quote-value p {
+    display: inline;
+    font-size: 75%;
+    font-style: italic;
+}
+
+blockquote p {
+    line-height: 1.3;
 }
 
 .views-field-field-quote-value {
@@ -193,8 +209,9 @@ blockquote,
 
 blockquote:before, blockquote:after {
     display: block;
-    font-size: 400%;
+    font-size: 300%;
     width: 25px;
+    font-family: "Times New Roman", serif;
 }
 
 blockquote:before {
@@ -214,7 +231,7 @@ blockquote:after {
 /** Borders at the bottom of each block. **/
 
 #right div.block, #left div.block {
-    border-bottom: 1px solid black;
+    margin-bottom: 20px;
 }
 
 /** Disable terrible play button. **/
@@ -243,7 +260,7 @@ h3.meta .tags ul.links li {
     background: none;
     border: none;
     font: inherit;
-    font-size: 125%;
+    font-size: 110%;
     margin: 0px;
     padding: 0px;
 }
@@ -265,14 +282,14 @@ h3.meta .tags ul.links li {
 }
 
 #footer-message p {
-    margin: 10px auto;
     font-size: 75%;
-    font-style: italic;
+    text-transform: uppercase;
+    margin: 5px auto;
 }
 
 #footer-message a {
     color: white;
-    font-weight: bold;
+    text-decoration: underline;
 }
 
 a:link {
@@ -286,7 +303,7 @@ a:link {
 }
 
 #logo-box {
-    width: 200px;
+    width: 300px;
     margin-top: 20px;
     float: right;
 }
@@ -304,7 +321,10 @@ a:link {
 
 .view-release-about h3 a:active,
 .view-release-about h3 a:hover,
-.view-release-about h3 a:focus {
+.view-release-about h3 a:focus,
+.view-release-archive h3 a:active,
+.view-release-archive h3 a:hover,
+.view-release-archive h3 a:focus {
     text-decoration: none;
     color: black;
 }
@@ -319,13 +339,114 @@ a:link {
 }
 
 .view-release-about .views-row {
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid black;
+    margin-bottom: 20px;
 }
 
 /** No bottom borders for the last blocks. **/
 #left #block-release_custom_module-subscribe.block,
 #right #block-views-release_video-block_1.block {
     border-bottom: none;
+}
+
+.block-wrapper .title {
+    margin-bottom: 15px;
+}
+
+h1.title {
+    margin-bottom: 0px;
+}
+
+h1.title, div.node h2 {
+    font-family: Arial, sans-serif;
+}
+
+div.node h2 {
+    color: darkgrey;
+    font-weight: normal;
+}
+
+#second-bar {
+    height: 4px;
+    background: #3F98A9;
+    margin-top: 4px;
+}
+
+#left .content {
+    text-align: center;
+}
+
+#left .content p {
+    text-align: left;
+}
+
+#content {
+    min-height: 525px;
+}
+
+.view-release-archive h3,
+.view-release-about .view-content > h3,
+.view-release-visuals .views-field-title,
+.view-release-issues .views-field-title,
+.view-release-corner .views-field-title {
+    font-family: Verdana, Geneva, '“DejaVu Sans”', sans-serif;
+    border-bottom: 5px solid #3F98A9;
+    margin-bottom: 5px;
+    font-size: 150%;
+}
+
+.view-release-about .views-field-title h3 {
+    font-family: Verdana, Geneva, '“DejaVu Sans”', sans-serif;
+}
+
+body.section-welcome #content {
+    background-image: url('images/WelcomePage.png');
+    background-repeat: no-repeat;
+}
+
+body.section-welcome #content .panel-flexible {
+    margin-top: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.view-release-about h3 {
+    clear: both;
+}
+
+#right #block-views-release_quotation-block_1 {
+    border-bottom: none;
+}
+
+.view-release-visuals .views-field-name,
+.view-release-visuals .views-field-created,
+.view-release-visuals .views-field-tid,
+.view-release-issues .views-field-name,
+.view-release-issues .views-field-created,
+.view-release-issues .views-field-tid,
+.view-release-corner .views-field-name,
+.view-release-corner .views-field-created,
+.view-release-corner .views-field-tid {
+    font-size: 0.9em;
+    line-height: 1.667em;
+    font-weight: normal;
+    color: #222;
+    font-family: Georgia,Palatino,“Palatino Linotype”,“Book Antiqua”,“URW Palladio L”,serif;
+    margin-bottom: 5px;
+}
+
+.view-release-visuals .views-field-field-frontpage-image-fid img,
+.view-release-issues .views-field-field-frontpage-image-fid img,
+.view-release-corner .views-field-field-frontpage-image-fid img
+{
+    float: left;
+    margin-right: 20px;
+}
+
+h1.title,
+.block h2.title {
+    font-weight: bold;
+}
+
+.branding p {
+    font-size: 11px;
 }
