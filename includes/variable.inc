@@ -88,6 +88,17 @@ variable_set('messaging_method_enabled', array("mail" => "mail", "mimemail" => "
 variable_set('messaging_method_mail', array("name" => "Mail", "queue" => 0, "log" => 0));
 variable_set('messaging_method_mimemail', array("name" => "Mail", "queue" => 0, "log" => 0));
 
+// Mimemail settings
+
+variable_set('mimemail_engine', "mimemail");
+variable_set('mimemail_name', "Release");
+variable_set('mimemail_mail', "imrp@ccsu.edu");
+variable_set('mimemail_alter', 0);
+variable_set('mimemail_simple_address', 0);
+variable_set('mimemail_sitestyle', 0);
+variable_set('mimemail_format', "2");
+variable_set('mimemail_textonly', 0);
+
 // Admin settings
   variable_set('admin_toolbar', array(
     'layout' => "horizontal",
