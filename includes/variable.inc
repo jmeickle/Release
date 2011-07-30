@@ -78,11 +78,15 @@ variable_set('imageapi_image_toolkit', "imageapi_gd");
 variable_set('image_toolkit', "gd");
 
 // Messaging settings.
-variable_set('messaging_default_method', 'mail');
+variable_set('messaging_default_method', "mimemail");
+variable_set('messaging_filters_mail', array("body_format" => "2", "filter" => "messaging_html"));
+variable_set('messaging_filters_mimemail', array("body_format" => "2", "filter" => "messaging_html"));
 variable_set('messaging_mail_default_from', "newsletter@releasenews.org");
 variable_set('messaging_mail_returnpath', "imrp@ccsu.edu");
-variable_set('messaging_mail_sender_format', "[name] <[mail]>");
-variable_set('messaging_method_enabled', array("mail" => "mail"));
+variable_set('messaging_mail_sender_format', "Release <newsletter@releasenews.org>");
+variable_set('messaging_method_enabled', array("mail" => "mail", "mimemail" => "mimemail"));
+variable_set('messaging_method_mail', array("name" => "Mail", "queue" => 0, "log" => 0));
+variable_set('messaging_method_mimemail', array("name" => "Mail", "queue" => 0, "log" => 0));
 
 // Admin settings
   variable_set('admin_toolbar', array(
