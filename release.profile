@@ -110,6 +110,7 @@ function release_profile_modules() {
     'autoload',
 //    'messaging',
 //    'messaging_mail',
+//    'messaging_mime_mail',
 //    'messaging_template',
 //    'notifications_anonymous',
 //    'notifications_content',
@@ -274,7 +275,7 @@ function release_profile_tasks(&$task, $url) {
     module_rebuild_cache();
     drupal_install_modules(array('strongarm', 'modalframe', 'reverse_node_reference', 'context', 'context_layouts', 'context_ui', 'subpath_alias', 'url_alter'));
     module_rebuild_cache();
-    drupal_install_modules(array('messaging', 'messaging_mail', 'messaging_template'));
+    drupal_install_modules(array('messaging', 'messaging_mail', 'messaging_mime_mail', 'messaging_template'));
     module_rebuild_cache();
     drupal_install_modules(array('notifications'));
     module_rebuild_cache();
