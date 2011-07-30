@@ -112,6 +112,7 @@ function release_profile_modules() {
 //    'messaging_mail',
 //    'messaging_mime_mail',
 //    'messaging_template',
+      'mimemail',
 //    'notifications_anonymous',
 //    'notifications_content',
 //    'notifications_nodetype',
