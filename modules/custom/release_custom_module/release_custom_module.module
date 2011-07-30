@@ -71,13 +71,13 @@ function release_custom_module_block($op = 'list', $delta = '', $edit = array())
           break;
         case 'corner':
           $html = '<img src="'.$dir.'/images/USA.png" />';
-          $block['content'] = l($html, 'corner', array("html" => TRUE));
-          $block['content'] .= t('We need copy for this button.');
+          $block['content'] = l($html, 'national-corner', array("html" => TRUE));
+//          $block['content'] .= t('We need copy for this button.');
           break;
         case 'graphs':
           $html = '<img src="'.$dir.'/images/Graphs.png" />';
-          $block['content'] = l($html, 'graphs', array("html" => TRUE));
-          $block['content'] .= t('See the latest graphs, statistics, and visual information.');
+          $block['content'] = l($html, 'visuals', array("html" => TRUE));
+//          $block['content'] .= '<p>'.t('See the latest graphs, statistics, and visual information.').'</p>';
           break;
         case 'welcome':
           $html = '<img src="'.$dir.'/images/Welcome.png" />';
