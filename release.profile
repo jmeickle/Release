@@ -44,7 +44,7 @@ function release_profile_modules() {
     'backup_migrate_files',
     'devel',
     'devel_generate',
-    'performance',
+//    'performance',
 //    'googleanalytics', Temporarily disabled.
     'node_import',
 // Installed later because it depends on Ctools.
