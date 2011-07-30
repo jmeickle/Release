@@ -103,3 +103,16 @@ function release_custom_module_form_alter(&$form, $form_state, $form_id) {
        $form['notifications']["#type"] = "hidden";
     }
 }
+
+function release_custom_module_notifications_subscription($op, $subscription) {
+    if ($op == 'insert')
+    {
+        $sender = array('name' => 'Release', 'mail' => 'newsletter@releasenews.org');
+        $recipient = $subscription->destination;
+        $subject = 'Thank you for subscribing to Release.';
+        $body = file_get_contents('./profiles/release/modules/custom/release_custom_module/email/releaseSubscribe.html');
+
+        mimemail($sender, $recipient, $subject, $body);
+    }
+}
+
