@@ -392,6 +392,8 @@ div.node h2 {
     border-bottom: 5px solid #3F98A9;
     margin-bottom: 5px;
     font-size: 150%;
+	margin-top: 10px;
+	clear:both;
 }
 
 .view-release-about .views-field-title h3 {
