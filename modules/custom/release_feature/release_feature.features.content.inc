@@ -79,6 +79,10 @@ function release_feature_content_default_fields() {
     'display_settings' => array(
       'weight' => 0,
       'parent' => 'group_multimedia',
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
       'label' => array(
         'format' => 'above',
       ),
@@ -89,10 +93,6 @@ function release_feature_content_default_fields() {
       'full' => array(
         'format' => 'default',
         'exclude' => 1,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
       ),
       '2' => array(
         'format' => 'default',
@@ -137,8 +137,12 @@ You may upload more documents by selecting "Add another item".',
     'field_name' => 'field_frontpage_image',
     'type_name' => 'release_article',
     'display_settings' => array(
-      'weight' => '9',
+      'weight' => '6',
       'parent' => '',
+      '4' => array(
+        'format' => 'image_plain',
+        'exclude' => 1,
+      ),
       'label' => array(
         'format' => 'above',
       ),
@@ -149,10 +153,6 @@ You may upload more documents by selecting "Add another item".',
       'full' => array(
         'format' => 'image_plain',
         'exclude' => 1,
-      ),
-      '4' => array(
-        'format' => 'image_plain',
-        'exclude' => 0,
       ),
       '2' => array(
         'format' => 'image_plain',
@@ -175,7 +175,7 @@ You may upload more documents by selecting "Add another item".',
     'active' => '1',
     'list_field' => '0',
     'list_default' => 1,
-    'description_field' => '1',
+    'description_field' => '0',
     'widget' => array(
       'file_extensions' => 'png gif jpg jpeg',
       'file_path' => '',
@@ -190,16 +190,16 @@ You may upload more documents by selecting "Add another item".',
       'custom_title' => 0,
       'title_type' => 'textfield',
       'default_image' => array(
-        'filename' => '3d_diamond.',
-        'filepath' => 'sites/default/files/imagefield_default_images/3d_diamond.',
-        'filemime' => 'application/octet-stream',
+        'filename' => '83cd6fc6eb562fa6063f5b34bbcdb2f0.png',
+        'filepath' => 'sites/default/files/imagefield_default_images/83cd6fc6eb562fa6063f5b34bbcdb2f0.png',
+        'filemime' => 'image/png',
         'source' => 'default_image_upload',
-        'destination' => 'sites/default/files/imagefield_default_images/3d_diamond.',
-        'filesize' => 591,
+        'destination' => 'sites/default/files/imagefield_default_images/83cd6fc6eb562fa6063f5b34bbcdb2f0.png',
+        'filesize' => 971,
         'uid' => '1',
         'status' => 1,
-        'timestamp' => 1308926795,
-        'fid' => '18',
+        'timestamp' => 1309922114,
+        'fid' => '4',
       ),
       'use_default_image' => 1,
       'label' => 'Frontpage Image',
@@ -215,8 +215,12 @@ You may upload more documents by selecting "Add another item".',
     'field_name' => 'field_image',
     'type_name' => 'release_article',
     'display_settings' => array(
-      'weight' => '1',
-      'parent' => 'group_multimedia',
+      'weight' => '7',
+      'parent' => '',
+      '4' => array(
+        'format' => 'image_plain',
+        'exclude' => 1,
+      ),
       'label' => array(
         'format' => 'above',
       ),
@@ -227,10 +231,6 @@ You may upload more documents by selecting "Add another item".',
       'full' => array(
         'format' => 'article_thumbnail_imagelink',
         'exclude' => 1,
-      ),
-      '4' => array(
-        'format' => 'image_plain',
-        'exclude' => 0,
       ),
       '2' => array(
         'format' => 'image_plain',
@@ -284,8 +284,12 @@ You may upload more images by selecting "Add another item".',
     'field_name' => 'field_introduction',
     'type_name' => 'release_article',
     'display_settings' => array(
-      'weight' => '-1',
+      'weight' => '4',
       'parent' => '',
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
       'label' => array(
         'format' => 'above',
       ),
@@ -296,10 +300,6 @@ You may upload more images by selecting "Add another item".',
       'full' => array(
         'format' => 'default',
         'exclude' => 1,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
       ),
       '2' => array(
         'format' => 'default',
@@ -348,8 +348,12 @@ You may upload more images by selecting "Add another item".',
     'field_name' => 'field_subtitle',
     'type_name' => 'release_article',
     'display_settings' => array(
-      'weight' => '-4',
+      'weight' => '3',
       'parent' => '',
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
       'label' => array(
         'format' => 'above',
       ),
@@ -360,10 +364,6 @@ You may upload more images by selecting "Add another item".',
       'full' => array(
         'format' => 'default',
         'exclude' => 1,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
       ),
       '2' => array(
         'format' => 'default',
@@ -413,6 +413,10 @@ You may upload more images by selecting "Add another item".',
     'display_settings' => array(
       'weight' => '2',
       'parent' => 'group_multimedia',
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
       'label' => array(
         'format' => 'above',
       ),
@@ -423,10 +427,6 @@ You may upload more images by selecting "Add another item".',
       'full' => array(
         'format' => 'default',
         'exclude' => 1,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
       ),
       '2' => array(
         'format' => 'default',
@@ -545,6 +545,84 @@ You may upload more documents by selecting "Add another item".',
     ),
   );
 
+  // Exported field: field_frontpage_image
+  $fields['release_featured-field_frontpage_image'] = array(
+    'field_name' => 'field_frontpage_image',
+    'type_name' => 'release_featured',
+    'display_settings' => array(
+      'weight' => '9',
+      'parent' => '',
+      'label' => array(
+        'format' => 'above',
+      ),
+      'teaser' => array(
+        'format' => 'image_plain',
+        'exclude' => 1,
+      ),
+      'full' => array(
+        'format' => 'image_plain',
+        'exclude' => 1,
+      ),
+      '4' => array(
+        'format' => 'image_plain',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'image_plain',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'image_plain',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'image_plain',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'filefield',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'filefield',
+    'active' => '1',
+    'list_field' => '0',
+    'list_default' => 1,
+    'description_field' => '0',
+    'widget' => array(
+      'file_extensions' => 'png gif jpg jpeg',
+      'file_path' => '',
+      'progress_indicator' => 'bar',
+      'max_filesize_per_file' => '',
+      'max_filesize_per_node' => '',
+      'max_resolution' => '0',
+      'min_resolution' => '0',
+      'alt' => '',
+      'custom_alt' => 0,
+      'title' => '',
+      'custom_title' => 0,
+      'title_type' => 'textfield',
+      'default_image' => array(
+        'filename' => '83cd6fc6eb562fa6063f5b34bbcdb2f0.png',
+        'filepath' => 'sites/default/files/imagefield_default_images/83cd6fc6eb562fa6063f5b34bbcdb2f0.png',
+        'filemime' => 'image/png',
+        'source' => 'default_image_upload',
+        'destination' => 'sites/default/files/imagefield_default_images/83cd6fc6eb562fa6063f5b34bbcdb2f0.png',
+        'filesize' => 971,
+        'uid' => '1',
+        'status' => 1,
+        'timestamp' => 1309922114,
+        'fid' => '4',
+      ),
+      'use_default_image' => 1,
+      'label' => 'Frontpage Image',
+      'weight' => '1',
+      'description' => '',
+      'type' => 'imagefield_widget',
+      'module' => 'imagefield',
+    ),
+  );
+
   // Exported field: field_image
   $fields['release_featured-field_image'] = array(
     'field_name' => 'field_image',
@@ -654,12 +732,12 @@ You may upload more images by selecting "Add another item".',
     'multiple' => '0',
     'module' => 'text',
     'active' => '1',
-    'text_processing' => '0',
+    'text_processing' => '1',
     'max_length' => '',
     'allowed_values' => '',
     'allowed_values_php' => '',
     'widget' => array(
-      'rows' => 5,
+      'rows' => '5',
       'size' => '60',
       'default_value' => array(
         '0' => array(
@@ -671,7 +749,7 @@ You may upload more images by selecting "Add another item".',
       'label' => 'Quote Author',
       'weight' => 0,
       'description' => '',
-      'type' => 'text_textfield',
+      'type' => 'text_textarea',
       'module' => 'text',
     ),
   );

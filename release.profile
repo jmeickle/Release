@@ -34,7 +34,7 @@ function release_profile_modules() {
     'help',
     'menu',
     'path',
-    'search',
+//    'search',
     'taxonomy',
   
     // The rest are contrib modules, sorted by makefile:
@@ -44,15 +44,16 @@ function release_profile_modules() {
     'backup_migrate_files',
     'devel',
     'devel_generate',
-    'performance',
+//    'performance',
 //    'googleanalytics', Temporarily disabled.
     'node_import',
 // Installed later because it depends on Ctools.
 //    'strongarm',
 
     // basic.make
-//    'content_profile',
-//    'content_profile_tokens',
+    'content_profile',
+    'content_profile_registration',
+    'content_profile_tokens',
 // Installed later because they depend on Ctools.
 //    'context',
 //    'context_layouts',
@@ -76,6 +77,7 @@ function release_profile_modules() {
     'imageapi_gd',
     'imagecache',
     'imagecache_ui',
+    'nodequeue',
 
     // cck.make
     'conditional_fields',
@@ -103,15 +105,23 @@ function release_profile_modules() {
 //    'reverse_node_reference', // Installed later because it depends on db_version.
     'text',
     'userreference',
+ 
+    // interaction.make
+    'autoload',
+//    'messaging',
+//    'messaging_mail',
+//    'messaging_mime_mail',
+//    'messaging_template',
+      'mimemail',
+//    'notifications_anonymous',
+//    'notifications_content',
+//    'notifications_nodetype',
+//    'notifications_digest',
+//    'notifications',
+//    'notifications_ui',
 
     // panels.make
     'panels',
-
-    // search.make
-    'field_indexer',
-    'cck_field_indexer',
-    'node_field_indexer',
-    'porterstemmer',
 
     // seo.make
 //    'nodewords_admin',
@@ -137,7 +147,10 @@ function release_profile_modules() {
     'hs_taxonomy',
     'hs_taxonomy_views',
     'hs_menu',
+    'ie_css_optimizer',
+    'lightbox2',
     'logintoboggan',
+    'pagination',
     'quicktabs',
     'taxonomy_manager',
     'vertical_tabs',
@@ -161,8 +174,6 @@ function release_profile_modules() {
     'diff',
     'override_node_options',
     'revisioning',
-    'workflow',
-    'workflow_access',
 
     // (STUB) wysiwyg.make
 
@@ -264,6 +275,12 @@ function release_profile_tasks(&$task, $url) {
     // First, we need to install some modules that would break the normal install hook.
     module_rebuild_cache();
     drupal_install_modules(array('strongarm', 'modalframe', 'reverse_node_reference', 'context', 'context_layouts', 'context_ui', 'subpath_alias', 'url_alter'));
+    module_rebuild_cache();
+    drupal_install_modules(array('messaging', 'messaging_mail', 'messaging_mime_mail', 'messaging_template'));
+    module_rebuild_cache();
+    drupal_install_modules(array('notifications'));
+    module_rebuild_cache();
+    drupal_install_modules(array('notifications_anonymous', 'notifications_content', 'notifications_nodetype', 'notifications_digest', 'notifications_ui'));
 
     // By now, all modules are installed.
 
@@ -275,6 +292,12 @@ function release_profile_tasks(&$task, $url) {
 
     // Set various site variables, options, and settings.
     require("variable.inc");
+
+    // Notifications settings
+    require("notifications.inc");
+
+    // Lightbox settings
+    require("lightbox2.inc");
 
     // Set up content types.
     require("content_type.inc");

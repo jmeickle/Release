@@ -1,0 +1,452 @@
+/** Slideshow stuff. **/
+
+.pane-views-release-slideshow-block-1 {
+
+    padding: 10px;
+    background: #6A6A6A;
+
+}
+
+#views_slideshow_singleframe_main_release_slideshow-block_1 {
+
+    margin-right: 16px;
+    background: #555;
+}
+
+.view-id-release_slideshow .views-field-tid {
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.view-id-release_slideshow .views-field-tid,
+.activeSlide {
+
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(63, 152, 169) transparent;
+    /* RGBa with 0.6 opacity */
+    background: rgba(63, 152, 169, 0.5);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F3F98A9, endColorstr=#7F3F98A9);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F3F98A9, endColorstr=#7F3F98A9)";
+}
+
+.view-id-release_slideshow .views-field-tid span a {
+    color: white;
+    font-size: 200%;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.view-id-release_slideshow .views-field-title,
+.view-id-release_slideshow .views-field-teaser {
+
+    float: right;
+    clear: both;
+}
+
+#views_slideshow_singleframe_teaser_section_release_slideshow-block_1, 
+#views_slideshow_singleframe_teaser_section_release_slideshow-block_1 .views_slideshow_singleframe_slide {
+
+    width: 100% !important;
+    height: 175px !important;
+
+}
+
+.view-id-release_slideshow .views-field-title,
+.view-id-release_slideshow .views-field-teaser {
+
+    width: 230px;
+    padding: 5px;
+}
+
+.view-id-release_slideshow .views-field-field-frontpage-image-fid,
+.view-id-release_slideshow .views-field-tid {
+
+    width: 250px;
+
+}
+
+.view-id-release_slideshow .views-slideshow-controls-top {
+
+    float: right;
+    margin-top: 20px;
+    font-size: 125%;
+
+}
+
+.view-id-release_slideshow .views-slideshow-controls-top a {
+    color: lightgrey;
+}
+
+.view-id-release_slideshow .views_slideshow_singleframe_pager div {
+
+    display: block;
+    padding-left: 0px;
+}
+
+#views_slideshow_singleframe_main_release_slideshow-block_1 {
+
+}
+
+.view-id-release_slideshow .views-field-title {
+    font-size: 175%;
+    color: white;
+}
+
+.view-id-release_slideshow .views-field-title a {
+    color: #3F98A9;
+}
+
+.view-id-release_slideshow .views-field-teaser {
+
+    font-size: 125%;
+    color: lightgrey;
+
+}
+
+/** Frontpage articles **/
+
+/** Specific theming for 3-article version: **/
+
+#block-views-release_articles-block_1 .views-field-tid {
+    font-size: 125%;
+}
+
+#block-views-release_articles-block_1 .views-row {
+    width: 150px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;  
+    *margin: 0 20px 0 20px;
+    text-align: left;
+}
+
+/** Specific theming for 2-article version: **/
+
+#block-views-release_articles-block_2 .views-field-tid {
+    font-size: 150%;
+}
+
+#block-views-release_articles-block_2 .views-row {
+    width: 225px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;  
+    *margin: 0 20px 0 20px;
+    text-align: left;
+}
+
+#block-views-release_articles-block_2 .views-field-title {
+    font-weight: bold;
+    font-size: 125%;
+}
+
+/** Shared **/
+
+#block-views-release_articles-block_1,
+#block-views-release_articles-block_2
+{
+    margin-top: 20px;
+}
+
+#block-views-release_articles-block_1 .view-content,
+#block-views-release_articles-block_2 .view-content {
+
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+}
+
+#block-views-release_articles-block_1 .views-row-first,
+#block-views-release_articles-block_2 .views-row-first {
+    margin-left: 0px;
+}
+
+#block-views-release_articles-block_1 .views-row-last,
+#block-views-release_articles-block_2 .views-row-last {
+    margin-right: 0px;
+}
+
+#block-views-release_articles-block_1 .views-field-tid,
+#block-views-release_articles-block_2 .views-field-tid {
+    border-bottom: 5px solid #3F98A9;
+    margin-bottom: 5px;
+}
+
+/** Blockquotes. **/
+
+blockquote {
+    padding-left: 5px;
+    margin-bottom: 0px;
+}
+
+blockquote {
+    color: black;
+    font-size: 110%;
+    font-style: inherit;
+}
+
+.views-field-field-quote-value p {
+    display: inline;
+    font-size: 75%;
+    font-style: italic;
+}
+
+blockquote p {
+    line-height: 1.3;
+}
+
+.views-field-field-quote-value {
+    text-align: right;
+}
+
+blockquote:before, blockquote:after {
+    display: block;
+    font-size: 300%;
+    width: 25px;
+    font-family: "Times New Roman", serif;
+}
+
+blockquote:before {
+    content: '\201C';
+    height: 20px;
+    margin-left: -20px;
+    margin-top: -25px;
+}
+
+blockquote:after {
+    content: '\201D';
+    height: 40px;
+    margin-top: -30px;
+    margin-left: 140px;
+}
+
+/** Borders at the bottom of each block. **/
+
+#right div.block, #left div.block {
+    margin-bottom: 20px;
+}
+
+/** Disable terrible play button. **/
+
+.emvideo-thumbnail-replacement span {
+    background: none;
+}
+
+/** Article page theming, meta section **/
+h3.meta .tags {
+    display: inline;
+}
+
+h3.meta .tags ul.links {
+    display: inline;
+    text-align: left;
+    font-size: 100%;
+}
+
+h3.meta .tags ul.links li {
+    padding: 0px;
+}
+
+.block .title {
+    color: #000;
+    background: none;
+    border: none;
+    font: inherit;
+    font-size: 110%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.article-introduction {
+    font-style: italic;
+}
+
+#main-navigation,
+#footer-message  {
+    background: #3F98A9;
+}
+
+#footer-message {
+    color: white;
+    padding: 0px;
+    margin: 1em 0px;
+    float: left;
+}
+
+#footer-message p {
+    font-size: 75%;
+    text-transform: uppercase;
+    margin: 5px auto;
+}
+
+#footer-message a {
+    color: white;
+    text-decoration: underline;
+}
+
+a:link {
+    color: #3F98A9;
+}
+
+.view-release-archive .views-field-created {
+    font-style: italic;
+    margin-right: 10px;
+    color: #ddd;
+}
+
+#logo-box {
+    width: 300px;
+    margin-top: 20px;
+    float: right;
+}
+
+#logo-box p {
+    font-size: 75%;
+    font-style: italic;
+    text-align: right;
+}
+
+#logo-box img {
+    float: right;
+    margin-left: 10px;
+}
+
+.view-release-about h3 a:active,
+.view-release-about h3 a:hover,
+.view-release-about h3 a:focus,
+.view-release-archive h3 a:active,
+.view-release-archive h3 a:hover,
+.view-release-archive h3 a:focus {
+    text-decoration: none;
+    color: black;
+}
+
+.view-release-about .views-field-body {
+    width: 50%;
+    float: right;
+}
+
+.view-release-about h3 {
+    margin-bottom: 10px;
+}
+
+.view-release-about .views-row {
+    margin-bottom: 20px;
+}
+
+/** No bottom borders for the last blocks. **/
+#left #block-release_custom_module-subscribe.block,
+#right #block-views-release_video-block_1.block {
+    border-bottom: none;
+}
+
+.block-wrapper .title {
+    margin-bottom: 15px;
+}
+
+h1.title {
+    margin-bottom: 0px;
+}
+
+h1.title, div.node h2 {
+    font-family: Arial, sans-serif;
+}
+
+div.node h2 {
+    color: darkgrey;
+    font-weight: normal;
+}
+
+#second-bar {
+    height: 4px;
+    background: #3F98A9;
+    margin-top: 4px;
+}
+
+#left .content {
+    text-align: center;
+}
+
+#left .content p {
+    text-align: left;
+}
+
+#content {
+    min-height: 525px;
+}
+
+.view-release-archive h3,
+.view-release-about .view-content > h3,
+.view-release-visuals .views-field-title,
+.view-release-issues .views-field-title,
+.view-release-corner .views-field-title {
+    font-family: Verdana, Geneva, '“DejaVu Sans”', sans-serif;
+    border-bottom: 5px solid #3F98A9;
+    margin-bottom: 5px;
+    font-size: 150%;
+}
+
+.view-release-about .views-field-title h3 {
+    font-family: Verdana, Geneva, '“DejaVu Sans”', sans-serif;
+}
+
+body.section-welcome #content {
+    background-image: url('images/WelcomePage.png');
+    background-repeat: no-repeat;
+}
+
+body.section-welcome #content .panel-flexible {
+    margin-top: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.view-release-about h3 {
+    clear: both;
+}
+
+#right #block-views-release_quotation-block_1 {
+    border-bottom: none;
+}
+
+.view-release-visuals .views-field-name,
+.view-release-visuals .views-field-created,
+.view-release-visuals .views-field-tid,
+.view-release-issues .views-field-name,
+.view-release-issues .views-field-created,
+.view-release-issues .views-field-tid,
+.view-release-corner .views-field-name,
+.view-release-corner .views-field-created,
+.view-release-corner .views-field-tid {
+    font-size: 0.9em;
+    line-height: 1.667em;
+    font-weight: normal;
+    color: #222;
+    font-family: Georgia,Palatino,“Palatino Linotype”,“Book Antiqua”,“URW Palladio L”,serif;
+    margin-bottom: 5px;
+}
+
+.view-release-visuals .views-field-field-frontpage-image-fid img,
+.view-release-issues .views-field-field-frontpage-image-fid img,
+.view-release-corner .views-field-field-frontpage-image-fid img
+{
+    float: left;
+    margin-right: 20px;
+}
+
+h1.title,
+.block h2.title {
+    font-weight: bold;
+}
+
+.branding p {
+    font-size: 11px;
+}

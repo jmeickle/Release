@@ -1,5 +1,8 @@
 <?php
 
+variable_set('user_pictures', 0);
+variable_set('user_signatures', 0);
+
 // General user-related settings.
 variable_set('user_email_verification', FALSE);
 variable_set('site_403', "toboggan/denied");

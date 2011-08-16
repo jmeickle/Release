@@ -49,8 +49,7 @@ function release_feature_strongarm() {
     'revision_information' => '5',
     'author' => '4',
     'options' => '6',
-    'menu' => '2',
-    'taxonomy' => '-3',
+    'menu' => '3',
     'path' => '7',
     'notifications' => '8',
   );
@@ -62,8 +61,6 @@ function release_feature_strongarm() {
   $strongarm->name = 'node_options_profile';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'revision',
-    2 => 'revision_moderation',
   );
 
   $export['node_options_profile'] = $strongarm;

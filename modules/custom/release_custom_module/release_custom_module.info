@@ -1,0 +1,7 @@
+;$Id$
+name = "Release Custom Module"
+description = "Custom code for Release."
+package = "Release"
+core = 6.x
+php = 5.3
+version = 6.x-1.0

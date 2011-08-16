@@ -1,0 +1,52 @@
+<?php
+
+  variable_set('lightbox2_border_size', unserialize('s:1:\"1\";'));
+  variable_set('lightbox2_box_color', unserialize('s:3:\"fff\";'));
+  variable_set('lightbox2_disable_close_click', unserialize('i:0;'));
+  variable_set('lightbox2_disable_resize', unserialize('i:0;'));
+  variable_set('lightbox2_disable_zoom', unserialize('i:0;'));
+  variable_set('lightbox2_download_link_text', unserialize('s:0:\"\";'));
+  variable_set('lightbox2_enable_contact', unserialize('i:0;'));
+  variable_set('lightbox2_enable_login', unserialize('i:0;'));
+  variable_set('lightbox2_enable_video', unserialize('i:0;'));
+  variable_set('lightbox2_fadein_speed', unserialize('s:1:\"0\";'));
+  variable_set('lightbox2_filter_xss_allowed_tags', unserialize('s:56:\"p, br, a, em, strong, cite, code, ul, ol, li, dl, dt, dd\";'));
+  variable_set('lightbox2_flv_player_flashvars', unserialize('s:0:\"\";'));
+  variable_set('lightbox2_flv_player_path', unserialize('s:13:\"flvplayer.swf\";'));
+  variable_set('lightbox2_font_color', unserialize('s:3:\"000\";'));
+  variable_set('lightbox2_force_show_nav', unserialize('i:0;'));
+  variable_set('lightbox2_imagefield_group_node_id', unserialize('s:1:\"0\";'));
+  variable_set('lightbox2_imagefield_use_node_title', unserialize('i:0;'));
+  variable_set('lightbox2_image_count_str', unserialize('s:0:\"\";'));
+  variable_set('lightbox2_js_location', unserialize('s:6:\"header\";'));
+  variable_set('lightbox2_keys_close', unserialize('s:6:\"c x 27\";'));
+  variable_set('lightbox2_keys_next', unserialize('s:4:\"n 39\";'));
+  variable_set('lightbox2_keys_play_pause', unserialize('s:2:\"32\";'));
+  variable_set('lightbox2_keys_previous', unserialize('s:4:\"p 37\";'));
+  variable_set('lightbox2_keys_zoom', unserialize('s:1:\"z\";'));
+  variable_set('lightbox2_lite', unserialize('i:0;'));
+  variable_set('lightbox2_loop_items', unserialize('i:1;'));
+  variable_set('lightbox2_loop_slides', unserialize('i:1;'));
+  variable_set('lightbox2_node_link_target', unserialize('i:0;'));
+  variable_set('lightbox2_node_link_text', unserialize('s:0:\"\";'));
+  variable_set('lightbox2_overlay_color', unserialize('s:3:\"000\";'));
+  variable_set('lightbox2_overlay_opacity', unserialize('s:3:\"0.8\";'));
+  variable_set('lightbox2_page_count_str', unserialize('s:0:\"\";'));
+  variable_set('lightbox2_page_init_action', unserialize('s:12:\"page_disable\";'));
+  variable_set('lightbox2_page_list', unserialize('s:0:\"\";'));
+  variable_set('lightbox2_resize_sequence', unserialize('s:1:\"0\";'));
+  variable_set('lightbox2_resize_speed', unserialize('s:1:\"1\";'));
+  variable_set('lightbox2_show_caption', unserialize('i:1;'));
+  variable_set('lightbox2_slidedown_speed', unserialize('s:1:\"1\";'));
+  variable_set('lightbox2_slideshow_automatic_exit', unserialize('i:0;'));
+  variable_set('lightbox2_slideshow_automatic_start', unserialize('i:0;'));
+  variable_set('lightbox2_slideshow_interval', unserialize('s:1:\"3\";'));
+  variable_set('lightbox2_slideshow_pause_on_next_click', unserialize('i:1;'));
+  variable_set('lightbox2_slideshow_pause_on_previous_click', unserialize('i:1;'));
+  variable_set('lightbox2_slideshow_show_play_pause', unserialize('i:1;'));
+  variable_set('lightbox2_top_position', unserialize('s:0:\"\";'));
+  variable_set('lightbox2_use_alt_layout', unserialize('i:1;'));
+  variable_set('lightbox2_video_count_str', unserialize('s:0:\"\";'));
+  variable_set('lightbox2_view_image_text', unserialize('s:10:\"View image\";'));
+
+?>
